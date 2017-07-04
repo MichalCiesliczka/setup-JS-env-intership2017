@@ -1,0 +1,16 @@
+@import './vars.scss';
+
+.contact-form {
+    background: $my-color;
+    max-width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 20px;
+
+    .contact-form__button {
+        background: white;
+        border: 1px solid green;
+        border-radius: 2px;
+        padding: 10px;
+    }
+}

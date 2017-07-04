@@ -1,5 +1,23 @@
 <html>
 <head>
-    <script src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="dist/style.css">
 </head>
+<body>
+    <form class="contact-form">
+        <div class="contact-form__group">
+            <label for="name" class="contct-form__label">Put your name here</label>
+            <input name="name" type="text" class="contact-form__input">
+        </div>
+        <div class="contact-form__group">
+            <label for="email" class="contct-form__label">Put your email here</label>
+            <input name="email" type="email" class="contact-form__input contact-form__input--email">
+        </div>
+        <button type="button" class="contact-form__button">Send me email, please!</button>
+    </form>
+
+    <button type="button" class="contact-form__button">Another button! Do not style me!</button>
+
+    <!--Scripts-->
+    <script src="dist/bundle.js"></script>
+</body>
 </html>
