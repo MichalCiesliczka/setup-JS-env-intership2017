@@ -4,7 +4,8 @@ let config = {
     entry: ['./src/index.js', './src/scss/style.scss'],
     output: {
         path: __dirname + '/dist',
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/dist/'
     },
     module: {
         loaders: [
