@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let config = {
     entry: ['./src/index.js', './src/scss/style.scss'],
@@ -23,7 +24,16 @@ let config = {
     plugins: [
         new ExtractTextPlugin({
             filename: 'style.css'
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'src/images',
+                to: 'images'
+            },
+            {
+                from: 'index.html'
+            }
+        ])
     ]
 }
 
